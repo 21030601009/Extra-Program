@@ -15,5 +15,6 @@ public class Program3_A
                 System.out.print(i+",");
             }
         }
+        scan.close();
     }
 }

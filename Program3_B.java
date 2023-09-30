@@ -22,5 +22,6 @@ public class Program3_B
         System.out.print("Enter number:");
         int num=scan.nextInt();
         isPallindrom(num,temp);
+        scan.close();
     }
 }

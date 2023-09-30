@@ -21,5 +21,6 @@ public class Program4_B
         int num=scan.nextInt();
         int ans=isFactorial(temp,sum);
         System.out.print("Factorial of"+num+"="+ans);
+        scan.close();
     }
 }

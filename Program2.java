@@ -23,5 +23,6 @@ public class Program2
         {
             System.out.print("String is Not Pallindrom");
         }
+        scan.close();
     }
 }

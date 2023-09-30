@@ -22,5 +22,6 @@ public class Program8 {
         }
         System.out.println("Odd="+odd);
         System.out.println("Even="+even);
+        scan.close();
     }
 }

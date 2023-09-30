@@ -24,5 +24,6 @@ public class Program7_B
         {
             System.out.print(fibonacci(i)+",");
         }
+        scan.close();
     }
 }

@@ -24,5 +24,6 @@ public class Program5_B
         int num=scan.nextInt();
         int ans=summation(num, sum);
         System.out.print("Answer="+ans);
+        scan.close();
     }
 }

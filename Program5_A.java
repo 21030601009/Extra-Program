@@ -16,5 +16,6 @@ public class Program5_A
             num=num/10;
         }
         System.out.print("Answer="+sum);
+        scan.close();
     }
 }

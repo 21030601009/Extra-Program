@@ -15,5 +15,6 @@ public class Program7_A {
             t2=ans;
             ans=t1+t2;
         }
+        scan.close();
     }
 }

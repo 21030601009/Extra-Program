@@ -19,5 +19,6 @@ public class Program1
             sum=sum+num[j];
         }
         System.out.print("Sum:"+sum);
-        }
+        scan.close();
+    }   
 }

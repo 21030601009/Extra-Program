@@ -26,5 +26,6 @@ public class Program10 {
                 System.out.print(i+",");
             }
         }
+        scan.close();
     }
 }

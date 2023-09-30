@@ -14,5 +14,6 @@ public class Program4_A
             ans=ans*i;
         }
         System.out.print("Factorial of "+num+"="+ans);
+        scan.close();
     }
 }

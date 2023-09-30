@@ -28,5 +28,6 @@ public class Program11 {
         {
             System.out.print(temp+" is not Armstrong");
         }
+        scan.close();
     }
 }

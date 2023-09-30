@@ -6,7 +6,7 @@ public class Program14
     {
         Scanner scan=new Scanner(System.in);
 
-        int degree;
+        int angle=0;
         System.out.print("Enter hour(0-12):");
         int hour=scan.nextInt();
 
@@ -15,11 +15,21 @@ public class Program14
 
         if((hour>=0)&&(hour<=12)&&(minute>=0)&&(minute<=60))
         {
-            
+            angle=((hour*5)*6-(minute*6));
         }
         else
         {
             System.out.print("Enter Valid data");
         }
+        if(angle>180)
+        {
+            angle=360-angle;
+        }
+        else if(angle<0)
+        {
+            angle=-angle;
+        }
+        System.out.print("Angle at "+hour+":"+minute+" is "+angle);
+        scan.close();
     }
 }

@@ -18,5 +18,6 @@ public class Program9 {
         {
             System.out.print("Number is Odd");
         }
+        scan.close();
     }
 }

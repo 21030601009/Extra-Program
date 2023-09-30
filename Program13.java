@@ -53,5 +53,6 @@ public class Program13 {
             System.out.print("]");
             System.out.println();
         }
+        scan.close();
     }
 }
