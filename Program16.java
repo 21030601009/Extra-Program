@@ -14,16 +14,16 @@ public class Program16 {
             int n = scan.nextInt();
             arr[i] = n;
         }
-        int max;
+        int temp;
         for(int i=0;i<len-1;i++)
         {
             for(int j=0;j<len-i-1;j++)
             {
                 if(arr[j]>arr[j+1])
                 {
-                    max=arr[j];
+                    temp=arr[j];
                     arr[j]=arr[j+1];
-                    arr[j+1]=max;
+                    arr[j+1]=temp;
                 }
             }
         }

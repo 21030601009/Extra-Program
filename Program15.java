@@ -6,60 +6,62 @@ public class Program15
     public static void main(String[] args)
     {
         Scanner scan=new Scanner(System.in);
-        int rem;
-        ArrayList<String> ans = new ArrayList<String>();
+        int rem,reverse=0;
+        String ans="";
         System.out.print("Enter Decimal number:");
-        int decimal=scan.nextInt();
-        while(decimal>=0)
+        int num=scan.nextInt();
+        while(num>0)
         {
-            rem=decimal%10;
-            System.out.print(rem);
+            rem=num%10;
+            reverse=(reverse*10)+rem;
+            num=num/10;
+        }
+        while(reverse>0)
+        {
+            rem=reverse%10;
             if(rem==0)
             {
-                ans.add("0000");
+                ans+="0000";
             }
             else if(rem==1)
             {
-                ans.add("0001");
+                ans+="0001";
             }
             else if(rem==2)
             {
-                ans.add("0010");
+                ans+="0010";
             }
             else if(rem==3)
             {
-                ans.add("0011");
+                ans+="0011";
             }
             else if(rem==4)
             {
-                ans.add("0100");
+                ans+="0100";
             }
             else if(rem==5)
             {
-                ans.add("0101");
+                ans+="0101";
             }
              else if(rem==6)
             {
-                ans.add("0110");
+                ans+="0110";
             }
              else if(rem==7)
             {
-                ans.add("0111");
+                ans+="0111";
             }
              else if(rem==8)
             {
-                ans.add("1000");
+                ans+="1000";
             }
              else if(rem==9)
             {
-                ans.add("1001");
+                ans+="1001";
             }
-            decimal=decimal/10;
+            reverse=reverse/10;
         }
         scan.close();
-    System.out.print(ans);
-    //     for (String i : ans) {
-    //         System.out.print(i);
-    // }
+    System.out.print("BCD:"+ans);
     }
 }
